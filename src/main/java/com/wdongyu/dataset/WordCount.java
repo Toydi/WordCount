@@ -29,7 +29,7 @@ public class WordCount {
             for (IntWritable i : value) {
                 sum += i.get();
             }
-            result.set(sum*10);
+            result.set(sum);
             context.write(key, result);
         }
     }
